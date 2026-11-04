@@ -1,0 +1,24 @@
+========================================
+     HOSPITAL MANAGEMENT SYSTEM
+         DOCTOR'S PRESCRIPTION
+========================================
+Prescription ID : P0001D0006
+Patient Name    : Hilal
+Doctor Name     : Dr. Dr. Razia Sultana
+Date            : 2026-05-11
+----------------------------------------
+MEDICINES:
+  - Tramadol 50mg x 14
+  - Metronidazole 400mg x 21
+  - Docusate Sodium 100mg x 28
+  - Lignocaine 5% Gel x 1
+----------------------------------------
+LAB TESTS:
+  - HIV 1/2 Antibody
+  - Syphilis Antibody
+  - Hepatitis C Virus Antibody
+  - Chlamydia/Gonorrhea PCR (Rectal Swab)
+----------------------------------------
+OPERATION:
+  NONE
+========================================

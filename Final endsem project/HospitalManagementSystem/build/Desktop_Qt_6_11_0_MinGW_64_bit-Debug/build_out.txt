@@ -1,0 +1,2 @@
+[  0%] Built target HospitalManagementSystem_autogen_timestamp_deps
+[  2%] Automatic MOC and UIC for target HospitalManagementSystem

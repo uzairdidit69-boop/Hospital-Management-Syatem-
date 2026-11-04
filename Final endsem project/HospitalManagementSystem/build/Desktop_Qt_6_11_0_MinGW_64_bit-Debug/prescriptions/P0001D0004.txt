@@ -1,0 +1,21 @@
+========================================
+     HOSPITAL MANAGEMENT SYSTEM
+         DOCTOR'S PRESCRIPTION
+========================================
+Prescription ID : P0001D0004
+Patient Name    : Uzair Ahmed
+Doctor Name     : Dr. Dr. Usman Qureshi
+Date            : 2026-05-10
+----------------------------------------
+MEDICINES:
+  NONE
+----------------------------------------
+LAB TESTS:
+  - ECG
+  - Troponin I
+  - CBC
+  - Electrolytes
+----------------------------------------
+OPERATION:
+  NONE
+========================================

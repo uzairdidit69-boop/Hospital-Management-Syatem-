@@ -1,0 +1,17 @@
+
+AutoMoc subprocess error
+------------------------
+The content generation command for "SRC:/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/HospitalManagementSystem_autogen/moc_predefs.h" failed.
+Process failed with return value 1
+
+Command
+-------
+C:/Qt-Framework/Tools/mingw1310_64/bin/g++.exe -std=gnu++17 -dM -E -c C:/Qt-Framework/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_QML_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 "-IC:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem" "-IC:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/core" "-IC:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/db" "-IC:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/ai" "-IC:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/gui" -IC:/Qt-Framework/6.11.0/mingw_64/include/QtCore -IC:/Qt-Framework/6.11.0/mingw_64/include -IC:/Qt-Framework/6.11.0/mingw_64/mkspecs/win32-g++ -IC:/Qt-Framework/6.11.0/mingw_64/include/QtWidgets -IC:/Qt-Framework/6.11.0/mingw_64/include/QtGui -IC:/Qt-Framework/6.11.0/mingw_64/include/QtSql -IC:/Qt-Framework/6.11.0/mingw_64/include/QtNetwork -IC:/Qt-Framework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++ -IC:/Qt-Framework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt-Framework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward -IC:/Qt-Framework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include -IC:/Qt-Framework/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed -IC:/Qt-Framework/Tools/mingw1310_64/x86_64-w64-mingw32/include
+
+Output
+------
+
+
+mingw32-make[2]: *** [CMakeFiles\HospitalManagementSystem_autogen.dir\build.make:74: HospitalManagementSystem_autogen/timestamp] Error 1
+mingw32-make[1]: *** [CMakeFiles\Makefile2:137: CMakeFiles/HospitalManagementSystem_autogen.dir/all] Error 2
+mingw32-make: *** [Makefile:90: all] Error 2

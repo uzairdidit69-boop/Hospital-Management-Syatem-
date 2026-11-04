@@ -1,0 +1,24 @@
+========================================
+     HOSPITAL MANAGEMENT SYSTEM
+         DOCTOR'S PRESCRIPTION
+========================================
+Prescription ID : P0001D0003
+Patient Name    : Uzair Ahmed
+Doctor Name     : Dr. Dr. Sara Malik
+Date            : 2026-05-10
+----------------------------------------
+MEDICINES:
+  NONE
+----------------------------------------
+LAB TESTS:
+  - ECG
+  - Echocardiogram
+  - Cardiac Troponins
+  - CBC
+  - Electrolytes
+  - Renal Function Tests
+  - Chest X-ray
+----------------------------------------
+OPERATION:
+  NONE
+========================================

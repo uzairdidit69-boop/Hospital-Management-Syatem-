@@ -1,0 +1,18 @@
+========================================
+     HOSPITAL MANAGEMENT SYSTEM
+         DOCTOR'S PRESCRIPTION
+========================================
+Prescription ID : P0001D0001
+Patient Name    : Uzair Ahmed
+Doctor Name     : Dr. Dr. Ayesha Khan
+Date            : 2026-05-10
+----------------------------------------
+MEDICINES:
+  - Paracetamol 500mg x 4
+----------------------------------------
+LAB TESTS:
+  NONE
+----------------------------------------
+OPERATION:
+  NONE
+========================================

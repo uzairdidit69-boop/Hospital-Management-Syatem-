@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="hospital.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1937"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="lab_tests" custom_title="0" dock_id="3" table="4,9:mainlab_tests"/><dock_state state="000000ff00000000fd0000000100000002000004010000020bfc0100000003fb000000160064006f0063006b00420072006f00770073006500310100000000000004010000000000000000fb000000160064006f0063006b00420072006f00770073006500320100000000000004010000000000000000fb000000160064006f0063006b00420072006f00770073006500330100000000000004010000011e00ffffff000002580000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="billing" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="43"/><column index="2" value="67"/><column index="3" value="88"/><column index="4" value="76"/><column index="5" value="92"/><column index="6" value="64"/><column index="7" value="32"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="lab_tests" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="47"/><column index="2" value="39"/><column index="3" value="36"/><column index="4" value="58"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="operations" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="79"/><column index="2" value="39"/><column index="3" value="36"/><column index="4" value="58"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="patient_status" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="60"/><column index="2" value="67"/><column index="3" value="43"/><column index="4" value="92"/><column index="6" value="72"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="patients" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_" freeze_columns="0"><sort/><column_widths><column index="1" value="65"/><column index="2" value="39"/><column index="3" value="30"/><column index="4" value="58"/><column index="5" value="52"/><column index="6" value="43"/><column index="7" value="29"/><column index="8" value="47"/><column index="9" value="79"/><column index="10" value="83"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1*">-- ============================================================
+-- HMS Seed Data — Run this in DB Browser for SQLite
+-- Execute SQL tab → paste all → press Run
+-- ============================================================
+
+-- Clear existing data first
+DELETE FROM pharmacy;
+DELETE FROM lab_tests;
+DELETE FROM operations;
+DELETE FROM staff;
+DELETE FROM director;
+DELETE FROM ward;
+
+-- Reset auto-increment counters
+DELETE FROM sqlite_sequence WHERE name IN
+  ('pharmacy','lab_tests','operations','doctors','staff','ward');
+
+-- ── DOCTORS (10) ─────────────────────────────────────────────
+INSERT INTO doctors(name,department,specialty,available) VALUES
+  ('Dr. Ayesha Khan',   'ENT',         'Ear Nose Throat Specialist',  1),
+  ('Dr. Bilal Ahmed',   'ENT',         'Rhinology Specialist',         1),
+  ('Dr. Sara Malik',    'Cardiology',  'Interventional Cardiologist', 1),
+  ('Dr. Usman Qureshi', 'Cardiology',  'Electrophysiologist',          1),
+  ('Dr. Nadia Hussain', 'Gynecology',  'Obstetrics Specialist',        1),
+  ('Dr. Razia Sultana', 'Gynecology',  'Reproductive Medicine',        1),
+  ('Dr. Kamran Ali',    'Orthopedics', 'Joint Replacement Surgeon',   1),
+  ('Dr. Zafar Iqbal',   'Orthopedics', 'Spine Surgeon',                1),
+  ('Dr. Hina Fatima',   'Pediatrics',  'Neonatology Specialist',       1),
+  ('Dr. Tariq Mehmood', 'Pediatrics',  'Pediatric Cardiologist',       1);
+
+-- ── MEDICINES (50) ───────────────────────────────────────────
+INSERT INTO pharmacy(name,price_per_unit,stock) VALUES
+  ('Panadol',              100,  500),
+  ('Ponstan',               50,  400),
+  ('Amoxicillin',           80,  600),
+  ('Augmentin',            200,  300),
+  ('Brufen',                60,  450),
+  ('Metformin',             40,  800),
+  ('Atorvastatin',         120,  350),
+  ('Omeprazole',            70,  500),
+  ('Cetirizine',            30,  700),
+  ('Azithromycin',         180,  250),
+  ('Clopidogrel',          250,  200),
+  ('Lisinopril',            90,  300),
+  ('Aspirin',               20,  900),
+  ('Dexamethasone',        150,  200),
+  ('Metronidazole',         55,  600),
+  ('Ciprofloxacin',        130,  400),
+  ('Ranitidine',            45,  550),
+  ('Salbutamol Inhaler',   350,  150),
+  ('Insulin Glargine',     800,  100),
+  ('Warfarin',             110,  180),
+  ('Prednisolone',          90,  300),
+  ('Tramadol',             160,  200),
+  ('Diclofenac',            75,  450),
+  ('Pantoprazole',          85,  500),
+  ('Folic Acid',            25,  800),
+  ('Amitriptyline',        140,  180),
+  ('Clonazepam',           200,  150),
+  ('Fluoxetine',           180,  200),
+  ('Sertraline',           160,  220),
+  ('Loratadine',            35,  600),
+  ('Montelukast',          120,  300),
+  ('Amlodipine',            75,  400),
+  ('Bisoprolol',           110,  280),
+  ('Carvedilol',           130,  220),
+  ('Furosemide',            50,  500),
+  ('Spironolactone',        80,  350),
+  ('Levothyroxine',         60,  450),
+  ('Glibenclamide',         35,  600),
+  ('Sitagliptin',          350,  150),
+  ('Esomeprazole',          90,  400),
+  ('Clarithromycin',       220,  200),
+  ('Doxycycline',          100,  350),
+  ('Cefixime',             180,  300),
+  ('Vancomycin',           800,   80),
+  ('Morphine',             500,   60),
+  ('Ondansetron',          120,  250),
+  ('Domperidone',           40,  600),
+  ('Vitamin D3',            30,  900),
+  ('Calcium Carbonate',     25,  800),
+  ('Zinc Sulphate',         20,  700);
+
+-- ── LAB TESTS (30) ───────────────────────────────────────────
+INSERT INTO lab_tests(name,price,available) VALUES
+  ('Blood Complete Count',      1500, 1),
+  ('Urine Analysis',             800, 1),
+  ('X-Ray Chest',               2500, 1),
+  ('MRI Brain',                15000, 1),
+  ('ECG',                       2000, 1),
+  ('Ultrasound Abdomen',        3500, 1),
+  ('Blood Sugar Fasting',        500, 1),
+  ('Liver Function Test',       3000, 1),
+  ('Kidney Function Test',      2800, 1),
+  ('Thyroid Profile',           4000, 1),
+  ('CT Scan Head',             12000, 1),
+  ('Hepatitis B Antigen',       1800, 1),
+  ('Hepatitis C Antibody',      2000, 1),
+  ('HbA1c',                     2500, 1),
+  ('Lipid Profile',             2200, 1),
+  ('Serum Creatinine',          1200, 1),
+  ('Uric Acid',                 1100, 1),
+  ('Stool Routine',              700, 1),
+  ('Blood Culture',             4500, 1),
+  ('Echocardiography',          8000, 1),
+  ('Bone Marrow Biopsy',       20000, 1),
+  ('Sputum Culture',            3000, 1),
+  ('Prothrombin Time',          1800, 1),
+  ('D-Dimer',                   3500, 1),
+  ('Troponin I',                4000, 1),
+  ('PSA Total',                 3500, 1),
+  ('CA-125',                    5000, 1),
+  ('HIV Screening',             2500, 1),
+  ('Dengue NS1 Antigen',        2000, 1),
+  ('Typhoid IgM',               1500, 1);
+
+-- ── OPERATIONS (20) ──────────────────────────────────────────
+INSERT INTO operations(name,price,available) VALUES
+  ('Appendectomy',            80000, 1),
+  ('Cholecystectomy',        120000, 1),
+  ('Brain Surgery',          500000, 1),
+  ('Knee Replacement',       350000, 1),
+  ('Cataract Surgery',        60000, 1),
+  ('Tonsillectomy',           40000, 1),
+  ('Hernia Repair',           75000, 1),
+  ('Coronary Bypass',        600000, 1),
+  ('Hip Replacement',        400000, 1),
+  ('Thyroidectomy',          150000, 1),
+  ('C-Section',              180000, 1),
+  ('Spinal Fusion',          450000, 1),
+  ('Prostatectomy',          300000, 1),
+  ('Hysterectomy',           250000, 1),
+  ('Kidney Transplant',      900000, 1),
+  ('Liver Transplant',      1200000, 1),
+  ('Gastric Bypass',         400000, 1),
+  ('Pacemaker Implant',      550000, 1),
+  ('LASIK Eye Surgery',      120000, 1),
+  ('Rhinoplasty',            200000, 1);
+
+-- ── STAFF (10) ───────────────────────────────────────────────
+INSERT INTO staff(name,role,shift,ward,username,password) VALUES
+  ('Fatima Noor',    'Nurse',      'Morning', 'General Ward',    'nurse1',    'pass123'),
+  ('Ahmed Raza',     'Ward Boy',   'Evening', 'ICU',             'wardboy1',  'pass123'),
+  ('Zara Sheikh',    'Nurse',      'Night',   'Surgical Ward',   'nurse2',    'pass123'),
+  ('Tariq Hassan',   'Technician', 'Morning', 'Lab',             'tech1',     'pass123'),
+  ('Maria Akram',    'Nurse',      'Evening', 'Pediatrics Ward', 'nurse3',    'pass123'),
+  ('Hassan Khan',    'Nurse',      'Morning', 'ICU',             'nurse4',    'pass123'),
+  ('Sana Mirza',     'Nurse',      'Night',   'General Ward',    'nurse5',    'pass123'),
+  ('Faisal Rehman',  'Ward Boy',   'Morning', 'Surgical Ward',   'wardboy2',  'pass123'),
+  ('Nazia Awan',     'Technician', 'Evening', 'Lab',             'tech2',     'pass123'),
+  ('Omar Farooq',    'Receptionist','Morning','Reception',       'recept1',   'pass123');
+
+-- ── DIRECTOR ─────────────────────────────────────────────────
+INSERT OR IGNORE INTO director(director_id,name,username,password,bank_balance)
+  VALUES(1,'Noor Ul Huda Soomro','director','nhs2026',0);
+
+-- ── WARDS (8) ────────────────────────────────────────────────
+INSERT INTO ward(name,capacity,occupied) VALUES
+  ('General Ward',       30,  0),
+  ('ICU',                10,  0),
+  ('Surgical Ward',      20,  0),
+  ('Pediatrics Ward',    15,  0),
+  ('Cardiology Ward',    12,  0),
+  ('Maternity Ward',     18,  0),
+  ('Orthopedics Ward',   14,  0),
+  ('Isolation Ward',      8,  0);
+
+-- ── Verify counts ─────────────────────────────────────────────
+SELECT 'doctors'   AS tbl, COUNT(*) AS cnt FROM doctors
+UNION ALL SELECT 'pharmacy',  COUNT(*) FROM pharmacy
+UNION ALL SELECT 'lab_tests', COUNT(*) FROM lab_tests
+UNION ALL SELECT 'operations',COUNT(*) FROM operations
+UNION ALL SELECT 'staff',     COUNT(*) FROM staff
+UNION ALL SELECT 'ward',      COUNT(*) FROM ward;
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

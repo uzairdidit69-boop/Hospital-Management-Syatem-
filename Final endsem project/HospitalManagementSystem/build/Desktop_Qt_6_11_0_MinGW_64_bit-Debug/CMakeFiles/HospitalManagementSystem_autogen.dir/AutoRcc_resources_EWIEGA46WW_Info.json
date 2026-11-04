@@ -1,0 +1,29 @@
+{
+	"BUILD_DIR" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/HospitalManagementSystem_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem",
+	"CMAKE_SOURCE_DIR" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "MinGW Makefiles",
+	"INCLUDE_DIR" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/HospitalManagementSystem_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/assets/bg_patient.png",
+		"C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/assets/logo.png",
+		"C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/assets/bg_director.png",
+		"C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/assets/bg_main.png",
+		"C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/assets/bg_staff.png"
+	],
+	"LOCK_FILE" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/HospitalManagementSystem_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt-Framework/6.11.0/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/HospitalManagementSystem_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/khan/Downloads/Final endsem project/HospitalManagementSystem/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

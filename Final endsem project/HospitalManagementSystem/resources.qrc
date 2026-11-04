@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/">
+    <file>assets/bg_main.png</file>
+    <file>assets/bg_patient.png</file>
+    <file>assets/bg_director.png</file>
+    <file>assets/bg_staff.png</file>
+    <file>assets/logo.png</file>
+  </qresource>
+</RCC>

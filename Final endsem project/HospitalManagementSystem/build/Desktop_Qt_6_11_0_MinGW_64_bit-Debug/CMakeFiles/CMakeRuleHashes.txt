@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+23a927f543fc25aece627ce94e1c4e05 CMakeFiles/HospitalManagementSystem_autogen
+9d1fc29de7883fabfac6d01be9aa8571 HospitalManagementSystem_autogen/EWIEGA46WW/qrc_resources.cpp
+02903d0012d38cb74da8d08575474957 HospitalManagementSystem_autogen/timestamp

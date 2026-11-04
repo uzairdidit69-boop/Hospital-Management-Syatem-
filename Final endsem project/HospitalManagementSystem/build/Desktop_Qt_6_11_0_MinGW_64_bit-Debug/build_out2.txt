@@ -1,0 +1,42 @@
+[  0%] Built target HospitalManagementSystem_autogen_timestamp_deps
+[  2%] Automatic MOC and UIC for target HospitalManagementSystem
+[  2%] Built target HospitalManagementSystem_autogen
+[  5%] Automatic RCC for resources.qrc
+[  7%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/HospitalManagementSystem_autogen/mocs_compilation.cpp.obj
+[ 10%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/main.cpp.obj
+[ 15%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Doctor.cpp.obj
+[ 15%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Patient.cpp.obj
+[ 17%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Ward.cpp.obj
+[ 20%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Wardstaff.cpp.obj
+[ 23%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/OPD.cpp.obj
+[ 25%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Reception.cpp.obj
+[ 28%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Operation.cpp.obj
+[ 30%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Test.cpp.obj
+[ 33%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Department.cpp.obj
+[ 35%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/Departments.cpp.obj
+[ 38%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/core/PrescriptionManager.cpp.obj
+[ 41%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/db/DatabaseManager_tables.cpp.obj
+[ 43%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/db/DatabaseManager_patients.cpp.obj
+[ 46%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/db/DatabaseManager_inventory.cpp.obj
+[ 48%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/db/DatabaseManager_misc.cpp.obj
+[ 51%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/ai/GeminiClient.cpp.obj
+[ 53%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/ai/DoctorAgent.cpp.obj
+[ 56%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/MainWindow.cpp.obj
+[ 58%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/PatientPortal.cpp.obj
+[ 61%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/PatientRegister.cpp.obj
+[ 64%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/PatientLogin.cpp.obj
+[ 66%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/OPDScreen.cpp.obj
+[ 69%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/DoctorChatScreen.cpp.obj
+[ 71%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/PatientActionsScreen.cpp.obj
+[ 74%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/PharmacyScreen.cpp.obj
+[ 76%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/LabTestScreen.cpp.obj
+[ 79%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/OperationScreen.cpp.obj
+[ 82%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/DischargeScreen.cpp.obj
+[ 84%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/DirectorLogin.cpp.obj
+[ 87%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/DirectorDashboard.cpp.obj
+[ 89%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/StaffLogin.cpp.obj
+[ 92%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/gui/StaffPortal.cpp.obj
+[ 94%] Building CXX object CMakeFiles/HospitalManagementSystem.dir/HospitalManagementSystem_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+[ 97%] Linking CXX executable HospitalManagementSystem.exe
+Copying runtime files to build directory...
+[100%] Built target HospitalManagementSystem
